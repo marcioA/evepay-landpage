@@ -34,10 +34,10 @@ export function Header() {
 
                 <ButtonGroup className="nav navbar-nav ml-auto">
                     <li className="nav-item" >
-                        <a className="btn btn-primary" href="#" type="button"><span className="fas fa-user"></span>Sign Up</a>
+                        <button type="button" style={{ backgroundColor: "#181c32" }}><span className="fas fa-user"></span>Sign Up</button>
                     </li>
                     <li className="nav-item">
-                        <a className="btn btn-success disabled" href="#"><span className="fas fa-sign-in-alt"></span> Login</a>
+                        <button disabled={true} type="button" style={{ backgroundColor: "#5e00b4" }}><span className="fas fa-sign-in-alt"></span> Login</button>
                     </li>
                 </ButtonGroup>
 
