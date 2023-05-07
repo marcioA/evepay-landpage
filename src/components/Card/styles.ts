@@ -1,30 +1,29 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 12px;
-    width: calc(50% - 24px);
-    padding: 24px;
-    box-sizing: border-box;
     background: #dcf7f0;
     border-radius: 12px;
-    position: relative;
     cursor: pointer;
+    margin: 12px;
     overflow: hidden;
+    padding: 24px;
+    position: relative;
+    transition: .2s linear;
+    width: calc(50% - 24px);
 
     &::before{
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        width: 100%;
-        transition: .2s linear;
-        opacity: 0;
-        height: 100%;
-        background: linear-gradient(116.3deg, #15fbbf, #019f77);
+        box-sizing: border-box;
+    }
+
+    & :nth-child(1) {
+        border-radius: 50%;
     }
 
     &:hover{
         background: linear-gradient(116.3deg,#15fbbf,#019f77);
+        & :nth-child(1) {
+            background-color: #fff;
+        }
     }
 `;
 
