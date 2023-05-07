@@ -20,6 +20,10 @@ export const Container = styled.div`
         transition: .2s linear;
         opacity: 0;
         height: 100%;
+        background: linear-gradient(116.3deg, #15fbbf, #019f77);
+    }
+
+    &:hover{
         background: linear-gradient(116.3deg,#15fbbf,#019f77);
     }
 `;
