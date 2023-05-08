@@ -23,37 +23,38 @@ export const Container = styled.div`
         background: linear-gradient(116.3deg,#15fbbf,#019f77);
         & :nth-child(1) {
             background-color: #fff;
+            fill: #15fbbf;
         }
     }
 `;
 
-export const BalloonIcon = styled.div`
-    width: 50px;
-    height: 50px;
-    margin-bottom: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    transition: .2s linear;
-    background: #24cfa4;
-    color: #fff;
-    justify-content: center;
+// export const BalloonIcon = styled.div`
+//     width: 50px;
+//     height: 50px;
+//     margin-bottom: 24px;
+//     border-radius: 50%;
+//     display: flex;
+//     align-items: center;
+//     transition: .2s linear;
+//     background: #24cfa4;
+//     color: #fff;
+//     justify-content: center;
 
-    position: relative;
-`;
+//     position: relative;
+// `;
 
-export const SvgIcon = styled.img`
-    
-    width: 36;
-    height: 36;
-    fill: none;
-    vertical-align: middle;
+// export const SvgIcon = styled.img`
 
-    &:not(:root) {
-        overflow-clip-margin: content-box;
-        overflow: hidden;
-    }
-`;
+//     width: 36;
+//     height: 36;
+//     fill: none;
+//     vertical-align: middle;
+
+//     &:not(:root) {
+//         overflow-clip-margin: content-box;
+//         overflow: hidden;
+//     }
+// `;
 
 export const TitleCard = styled.h6`
     display: flex;

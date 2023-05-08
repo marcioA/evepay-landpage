@@ -1,6 +1,11 @@
 import { Card } from '../../components/Card';
 import { AboutAside, AsideContainer, CardContainer, Container, IntroButton, IntroParagraph, Introtext } from './styles';
-import CheckSvg from '../../../public/check_circle_svg.svg'
+import PaidIcon from '@mui/icons-material/Paid';
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import FingerprintIcon from '@mui/icons-material/Fingerprint';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import ScoreIcon from '@mui/icons-material/Score';
 
 export function Home() {
     return (
@@ -15,42 +20,48 @@ export function Home() {
             </IntroButton>
 
             <AsideContainer>
-                <AboutAside>Teste</AboutAside>
+                <AboutAside>
+                    <h2>Evepay - Soluções Financeiras Inovadoras</h2>
+                    <p>O site FinTech da Evepay oferece aos usuários uma experiência bancária digital segura e simplificada, facilitando
+                        o acesso a serviços financeiros, como transferências de dinheiro, pagamentos de contas e orçamentos. Além disso,
+                        os usuários podem aproveitar nossos recursos de monitoramento de contas em tempo real para manter o controle de suas finanças.
+                    </p>
+                </AboutAside>
                 <CardContainer>
                     <Card
                         title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        paragraphContent='Identifique, categorize e classifique automaticamente transações financeiras'
+                        pathSvg={<PaidIcon />}
                         colorSvg='white'
                     />
                     <Card
-                        title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        title='Monitoramento de cartão de crédito'
+                        paragraphContent='Rastreie e visualize a atividade mensal do cartão de crédito'
+                        pathSvg={<CreditCardIcon />}
                         colorSvg='white'
                     />
                     <Card
-                        title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        title='Gerenciamento de despesas'
+                        paragraphContent='Gerenciar, rastrear e reembolsar despesas'
+                        pathSvg={<ReceiptLongIcon />}
                         colorSvg='white'
                     />
                     <Card
-                        title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        title='Análise Automatizada'
+                        paragraphContent='Use algoritmos e tecnologias avançadas para analisar dados financeiros'
+                        pathSvg={<AnalyticsIcon />}
                         colorSvg='white'
                     />
                     <Card
-                        title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        title='Planejamento financeiro'
+                        paragraphContent='Crie orçamentos personalizados e planos de poupança'
+                        pathSvg={<ScoreIcon />}
                         colorSvg='white'
                     />
                     <Card
-                        title='Identificador de transação'
-                        paragraphContent='Identificação automatica de transação'
-                        pathSvg={CheckSvg}
+                        title='Pagamentos inteligentes'
+                        paragraphContent='Faça pagamentos da melhor maneira possivel e sem perder beneficios.'
+                        pathSvg={<FingerprintIcon />}
                         colorSvg='white'
                     />
                 </CardContainer>

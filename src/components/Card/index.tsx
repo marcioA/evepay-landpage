@@ -1,18 +1,21 @@
-import { BalloonIcon, CardParagraph, Container, SvgIcon, TitleCard } from './styles';
+import { ReactNode } from 'react';
+import { Icons } from '../Icons';
+import { CardParagraph, Container, TitleCard } from './styles';
 
 interface CardProps {
     title: string;
     paragraphContent: string;
-    pathSvg: string;
+    pathSvg: ReactNode;
     colorSvg: string;
 }
 
 export function Card({ title, paragraphContent, pathSvg, colorSvg }: CardProps) {
     return (
         <Container>
-            <BalloonIcon>
+            {/* <BalloonIcon>
                 <SvgIcon src={pathSvg} color={colorSvg} />
-            </BalloonIcon>
+            </BalloonIcon> */}
+            <Icons SvgImage={pathSvg} />
             <TitleCard>• {title}</TitleCard>
             <CardParagraph>{paragraphContent}</CardParagraph>
         </Container>
