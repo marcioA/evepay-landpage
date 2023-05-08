@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 100%px;
   background-color: var(--bs-white);
+  align-self: center;
+  margin: 2rem;
+  padding: 2rem;
+  margin-bottom: 0;
 `;
 
 export const Introtext = styled.div`
@@ -59,21 +63,36 @@ export const AsideContainer = styled.div`
 `;
 
 export const AboutAside = styled.div`
-    width: 50%;
+    width: 30%;
     box-sizing: border-box;
     align-self: center;
+
+    h2 {
+        line-height: 1;
+        font-size: 36px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        letter-spacing: -.02em;
+        color: #020202;
+    }
+
+    p {
+        line-height: 1;
+        font-size: 20px;
+        margin-top: 0;
+    }
 `;
 
 export const CardsAside = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
-    margin: 0 -12px;
-    max-width: 1100px;
 `;
 
 export const CardContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 70%;
+    margin: 0 -12px;
+    max-width: 1100px;
 `;

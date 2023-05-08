@@ -48,6 +48,7 @@ export const SocialLogos = styled.div`
     box-sizing: border-box; 
     font-size: 16px;
     line-height: 28px;
+    margin: 1rem;
 `;
 
 export const MapSite = styled.div`
@@ -60,7 +61,23 @@ export const MapSite = styled.div`
 `;
 
 export const Section = styled.div`
+    display: flex;
+    flex-direction: column;
     width: calc(33.3% - 10px);
     font-size: 16px;
     line-height: 28px;
+
+    a{
+        &:not(:disabled):hover{
+            cursor: pointer;
+            text-decoration: underline !important;
+            color: "#5e5df0";
+        }   
+
+        &:disabled {
+            cursor: not-allowed;
+            pointer-events: all;
+        }
+    }
+    
 `;
