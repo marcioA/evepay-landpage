@@ -14,6 +14,8 @@ export const Container = styled.div`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -55,6 +57,15 @@ export const InfoContainer = styled.div`
 
 export const CompanyInfo = styled.div`
     width: 360px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const SocialLogos = styled.div`
@@ -64,6 +75,14 @@ export const SocialLogos = styled.div`
     font-size: 16px;
     line-height: 28px;
     margin: 1rem;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;;
+    }
 `;
 
 export const MapSite = styled.div`
@@ -75,10 +94,12 @@ export const MapSite = styled.div`
     line-height: 28px;
 
     @media (max-width: 768px) {
+        width: 100%;
         margin-top: 1rem;
         max-width: 100%;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;;
     }
 `;
 
