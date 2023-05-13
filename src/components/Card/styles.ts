@@ -26,6 +26,10 @@ export const Container = styled.div`
             fill: #15fbbf;
         }
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 // export const BalloonIcon = styled.div`
