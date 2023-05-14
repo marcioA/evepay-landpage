@@ -9,6 +9,14 @@ export const Container = styled.div`
     font-size: 16px;
     line-height: 28px;
     color: #FFF;
+
+    
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const InfoContainer = styled.div`
@@ -36,10 +44,28 @@ export const InfoContainer = styled.div`
         margin-bottom: 30px;
         line-height: 26px;
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
 `;
 
 export const CompanyInfo = styled.div`
     width: 360px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const SocialLogos = styled.div`
@@ -49,6 +75,14 @@ export const SocialLogos = styled.div`
     font-size: 16px;
     line-height: 28px;
     margin: 1rem;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;;
+    }
 `;
 
 export const MapSite = styled.div`
@@ -58,6 +92,15 @@ export const MapSite = styled.div`
     max-width: 900px;
     font-size: 16px;
     line-height: 28px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
 `;
 
 export const Section = styled.div`
@@ -79,5 +122,9 @@ export const Section = styled.div`
             pointer-events: all;
         }
     }
-    
+
+    @media (max-width: 768px) {
+        margin-top: 1rem;
+        max-width: 100%;
+    }
 `;

@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 100%px;
+  max-width: 100%;
   background-color: var(--bs-white);
   align-self: center;
   margin: 2rem;
   padding: 2rem;
   margin-bottom: 0;
+
+  @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const Introtext = styled.div`
@@ -24,6 +28,10 @@ export const IntroParagraph = styled.p`
     font-size: 1.5rem;
     letter-spacing: -.03em;
     color: #475467;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const IntroButton = styled.button`
@@ -47,6 +55,10 @@ export const IntroButton = styled.button`
         opacity: 0.9;
         transform: scale(1.01);
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const AsideContainer = styled.div`
@@ -60,6 +72,11 @@ export const AsideContainer = styled.div`
     color: #475467;
     justify-content: space-between;
     align-self: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
 `;
 
 export const AboutAside = styled.div`
@@ -81,11 +98,19 @@ export const AboutAside = styled.div`
         font-size: 20px;
         margin-top: 0;
     }
+
+    @media (max-width: 768px) {
+            width: 100%;
+        }
 `;
 
 export const CardsAside = styled.div`
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const CardContainer = styled.div`
@@ -95,4 +120,9 @@ export const CardContainer = styled.div`
     width: 70%;
     margin: 0 -12px;
     max-width: 1100px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
 `;
