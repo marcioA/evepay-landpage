@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 100%;
   background-color: var(--bs-white);
 
   @media (max-width: 768px) {
@@ -56,21 +56,20 @@ a:hover {
 `;
 
 export const ButtonGroup = styled.ul`
+  display: flex;
+  flex-direction: row;
+
   li{
-    justify-content: space-between;
     margin: 0.5rem;
+    width: 45%;
   }
 
   button{
-    flex: 1;
-    border-radius: 1.5rem;
-    padding: 12px 32px;
+    padding: 5px;
     font-size: 1rem;
-    line-height: 24px;
     text-decoration: none;
     font-family: "Inter",sans-serif;
     font-weight: 600;
-    font-size: 20px;
     line-height: 32px;
     border-radius: 50px;
     display: inline-block;
@@ -78,6 +77,7 @@ export const ButtonGroup = styled.ul`
     letter-spacing: -.02em;
     cursor: pointer;
     transition: .2s linear;
+    margin-left: 10px;
 
     &:disabled {
         opacity: 0.7 !important;

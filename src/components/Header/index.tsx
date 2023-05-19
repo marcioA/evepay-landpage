@@ -37,7 +37,7 @@ export function Header() {
                         <button type="button" style={{ backgroundColor: "#181c32" }}><span className="fas fa-user"></span>Sign Up</button>
                     </li>
                     <li className="nav-item">
-                        <button disabled={true} type="button" style={{ backgroundColor: "#5e00b4" }}><span className="fas fa-sign-in-alt"></span> Login</button>
+                        <button disabled={true} type="button" style={{ backgroundColor: "#5e5df0" }}><span className="fas fa-sign-in-alt"></span> Login</button>
                     </li>
                 </ButtonGroup>
 

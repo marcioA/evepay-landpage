@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  width: 90%;
   max-width: 100%;
   background-color: var(--bs-white);
   align-self: center;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 5%;
+  padding: 5%;
   margin-bottom: 0;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
         width: 100%;
@@ -22,12 +26,21 @@ export const Introtext = styled.div`
     color: #020202;
 `;
 
-export const IntroParagraph = styled.p`
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 1.5rem;
-    letter-spacing: -.03em;
-    color: #475467;
+export const IntroParagraph = styled.div`
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    p {
+        width: 95%;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: -.03em;
+        color: #475467;
+    }
+
 
     @media (max-width: 768px) {
         width: 100%;
@@ -35,6 +48,7 @@ export const IntroParagraph = styled.p`
 `;
 
 export const IntroButton = styled.button`
+    width: 30%;
     padding: 12px 32px;
     font-size: 1rem;
     line-height: 24px;
@@ -50,6 +64,7 @@ export const IntroButton = styled.button`
     background: #fa9e35;
     box-shadow: 0 10px 20px rgba(250,158,53,.4);
     border: transparent;
+    margin-bottom: 15px;
 
     &:hover {
         opacity: 0.9;
@@ -64,6 +79,7 @@ export const IntroButton = styled.button`
 export const AsideContainer = styled.div`
     display: flex;
     flex-direction: row;
+    margin-top: 120px;
     margin-bottom: 160px;
     font-family: "Inter",sans-serif;
     font-weight: 400;
