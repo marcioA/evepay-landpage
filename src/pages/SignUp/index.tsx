@@ -25,7 +25,7 @@ export function SignUp() {
                                 }}
                             />
                         </Grid>
-                        <Grid item>
+                        {/* <Grid item>
                             <TextField
                                 required
                                 id="user_password"
@@ -39,8 +39,8 @@ export function SignUp() {
                                     }
                                 }}
                             />
-                        </Grid>
-                        <Grid item>
+                        </Grid> */}
+                        {/* <Grid item>
                             <TextField
                                 required
                                 id="user_repeat_password"
@@ -54,7 +54,7 @@ export function SignUp() {
                                     }
                                 }}
                             />
-                        </Grid>
+                        </Grid> */}
                         <Grid item>
                             <TextField
                                 id="user_email"

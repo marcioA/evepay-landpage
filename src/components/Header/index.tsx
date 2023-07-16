@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Container, NavbarContainer, ButtonGroup } from './styles';
 
 export function Header() {
@@ -33,12 +34,14 @@ export function Header() {
 
 
                 <ButtonGroup className="nav navbar-nav ml-auto">
-                    <li className="nav-item" >
-                        <button type="button" style={{ backgroundColor: "#181c32" }}><span className="fas fa-user"></span>Sign Up</button>
-                    </li>
-                    <li className="nav-item">
+                    <Link to="/cadastrar">
+                        <li className="nav-item" >
+                            <button type="button" style={{ backgroundColor: "#181c32" }}><span className="fas fa-user"></span>Cadastrar</button>
+                        </li>
+                    </Link>
+                    {/* <li className="nav-item">
                         <button disabled={true} type="button" style={{ backgroundColor: "#5e5df0" }}><span className="fas fa-sign-in-alt"></span> Login</button>
-                    </li>
+                    </li> */}
                 </ButtonGroup>
 
             </NavbarContainer>
